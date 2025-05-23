@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas - Arquitectura de Computadoras</title>
+    <style>
+        :root {
+            --primary-color: #802434;
+            --secondary-color: #D4AF37;
+            --background: #f8f9fa;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: var(--background);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header-bg {
+            background: linear-gradient(rgba(0,0,0,0.6), url('n.jpeg'));
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .institution-info {
+            color: rgb(142, 46, 46);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .practicas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        .practica-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .practica-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .practica-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .practica-card span {
+            display: block;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: var(--primary-color);
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            filter: brightness(0) invert(1);
+        }
+
+        .nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0 2rem;
+}
+
+.nav-button {
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    background: var(--secondary-color);
+    color: black;
+}
+
+        @media (max-width: 768px) {
+    .practicas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-bg {
+        height: 30vh;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        width: 90%;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="institution-info">
+            <h1>TECNOLÓGICO NACIONAL DE MÉXICO</h1>
+            <h2>INSTITUTO TECNOLÓGICO DE SALTILLO</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 style="text-align: center; margin-bottom: 2rem;">MENU</h2>
+
+        <nav class="nav-menu">
+            <a href="unidad1.html" class="nav-button">Unidad 1</a>
+            <a href="unidad2.html" class="nav-button">Unidad 2</a>
+            <a href="unidad3.html" class="nav-button">Unidad 3</a>
+            <a href="unidad4.html" class="nav-button">Unidad 4</a>
+            <a href="practica.html" class="nav-button">Prácticas</a>
+        </nav>
+
+        <h2 style="text-align: center; margin-bottom: 2rem;">Prácticas de Arquitectura de Computadoras</h2>
+        
+        <div class="practicas-grid">
+            <a href="prac1 Arqui.pdf" class="practica-card">
+                <span>Práctica 1</span>
+                
+            </a>
+            <a href="pract 2 arq.pdf" class="practica-card">
+                <span>Práctica 2</span>
+                
+            </a>
+            <a href="pract3 arqui.pdf" class="practica-card">
+                <span>Práctica 3</span>
+                
+            </a>
+            <a href="pract4 arqui.pdf" class="practica-card">
+                <span>Práctica 4</span>
+                
+            </a>
+            <a href="pract5 arqui.pdf" class="practica-card">
+                <span>Práctica 5</span>
+                
+            </a>
+            <a href="COSTEO EQUIPOS.pdf" class="practica-card">
+                <span>Costeo</span>
+                
+            </a>
+            <a href="Diseño equipos.pdf" class="practica-card">
+                <span>Equipos</span>
+                
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://saltillo.tecnm.mx/" target="_blank">
+                <img src="logo.png" alt="TecNM Saltillo">
+            </a>
+            <a href="https://www.facebook.com/paqito.pena/" target="_blank">
+                <img src="pp.png" alt="Facebook">
+            </a>
+            <a href="https://w.app/s3CT4N" target="_blank">
+                <img src="p.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/francisco_j1510/" target="_blank">
+                <img src="p2.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
